@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>arq_description_common</name>
+  <version>0.0.1</version>
+  <description>Commonly used files describing ARQ's robotic setups</description>
+
+  <maintainer email="b.d.denoun@qmul.ac.uk">Brice Denoun</maintainer>
+  <license>GPL</license>
+  <author email="b.d.denoun@qmul.ac.uk">Brice Denoun</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
