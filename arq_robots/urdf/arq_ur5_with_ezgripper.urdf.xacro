@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="arq_ur5_with_ezgripper">
+
+    <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro"/>
+    <xacro:include filename="$(find ezgripper_driver)/urdf/ezgripper_dual_gen2_articulated.urdf.xacro"/>
+
+    <link name="world"/>
+
+    <xacro:arg name="initial_x" default="0.0"/>
+    <xacro:arg name="initial_y" default="0.0"/>
+    <xacro:arg name="initial_z" default="0.86"/>
+
+    <!-- Create a fixed joint between the reference frame (world) and the robot -->
+    <joint name="world_to_arm_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="$(arg initial_x) $(arg initial_y) $(arg initial_z)" rpy="0 0.0 0"/>
+    </joint>
+
+    <!-- Add the Universal Robot 5 without limited joints -->
+    <xacro:ur5_robot prefix = "" joint_limited="false"/>
+
+    <!-- Add the gripper -->
+    <ezgripper_dual  prefix= "" parent_link="ee_link">
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    </ezgripper_dual>
+
+</robot>
