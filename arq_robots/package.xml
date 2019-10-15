@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>arq_robots</name>
+  <version>0.0.1</version>
+  <description>Robot packages compatible with the Modular Benchmarking Framework.
+      It gathers some of the files required to configure and integrate different hardware to the framework.
+  </description>
+
+  <maintainer email="b.d.denoun@qmul.ac.uk">Brice Denoun</maintainer>
+  <license>GPL</license>
+  <author email="b.d.denoun@qmul.ac.uk">Brice Denoun</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
