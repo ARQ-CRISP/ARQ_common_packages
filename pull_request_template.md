@@ -20,4 +20,3 @@ Put an x in the boxes that apply. You can also fill these out after creating the
 - [ ] Added necessary documentation (if appropriate)
 - [ ] Added the corresponding license to each file and add the current year of any one that you modified.
 - [ ] Tested on real hardware (if appropriate)
-￼
