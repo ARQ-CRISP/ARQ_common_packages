@@ -21,6 +21,12 @@
             <name>arq_panda_setup</name>
             <pose>0.0 0.0 0.0 0 0 0</pose>
         </include>
+        <include>
+            <uri>model://ground</uri>
+            <static>true</static>
+            <name>ground</name>
+            <pose>0.0 0.0 0.0 0 0 0</pose>
+        </include
         <!-- kinect -->
         <include>
             <uri>model://kinect_ros</uri>
