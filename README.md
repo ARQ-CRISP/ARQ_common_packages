@@ -5,7 +5,7 @@ Repository containing all the packages required to integrate and run the robots 
 This ROS package is an example of a *robot package* required to run robots we have in the lab with the **Modular Benchmarking Framework**. It contains urdf and controller files describing the robot and how to control it.
 
 ## arq_description_common
-This ROS package is an example of a *description package* required to describe the environment in which the robot will operate with the **Modular Benchmarking Framework**. This ROS package (whatever its name) must contain all required information regarding the robot's setup. It gathers gazebo __.__world files, as well as all the models required to display it and scenes in order to restrain robot's movement and having proper collision checking (.scene files). These files should be shared among the following directories.
+This ROS package is an example of a *description package* required to describe the environment in which the robot will operate with the **Modular Benchmarking Framework**. This ROS package (whatever its name is) must contain all required information regarding the robot's setup. It gathers gazebo __.__world files, as well as all the models required to display it and scenes in order to restrain robot's movement and having proper collision checking (.scene files). These files should be shared among the following directories.
 ```
 - models
 - scenes
